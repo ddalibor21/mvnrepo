@@ -1,0 +1,54 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>sk.dalibor.spse-po</groupId>
+	<artifactId>person-db-core</artifactId>
+	<packaging>jar</packaging>
+	<version>0.3</version>
+	<name>Person Database Core</name>
+	<url>http://dalibor.sk</url>
+
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>dali</id>
+			<name>Adamcik Dalibor</name>
+			<email>ddalibor21@gmail.com</email>
+			<roles>
+				<role>Architect</role>
+				<role>Project Manager</role>
+				<role>Chief Developer</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<build>
+		<finalName>person-db</finalName>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-install-plugin</artifactId>
+				<version>2.5.2</version>
+				<configuration>
+					<createChecksum>true</createChecksum>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<description>Java example project - save person entity into a file</description>
+</project>
