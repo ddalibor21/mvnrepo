@@ -47,7 +47,25 @@
 					<createChecksum>true</createChecksum>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>3.0.1</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
+		<resources>
+			<resource>
+				<directory>${basedir}/src/</directory>
+			</resource>
+		</resources>
 	</build>
 
 	<description>Java example project - save person entity into a file</description>
